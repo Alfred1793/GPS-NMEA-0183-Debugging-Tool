@@ -1,55 +1,55 @@
-# GPS NMEA-0183 调试工具
+# GPS NMEA-0183 Debug Tool
 
-## 项目简介
+## Project Overview
 
-GPS NMEA-0183 调试工具是一个专门设计用于调试和分析 GPS 设备输出的桌面应用程序。本工具**完全支持 NMEA-0183 协议**，能够实时解析和显示符合该协议的 GPS 数据。通过串口连接 GPS 设备，本程序可以解析接收到的 NMEA 数据，并以清晰直观的界面展示，便于开发者和技术人员进行调试和分析。
+The GPS NMEA-0183 Debug Tool is a desktop application specifically designed for debugging and analyzing GPS device outputs. This tool **fully supports the NMEA-0183 protocol** and can parse and display GPS data conforming to this protocol in real-time. By connecting to GPS devices via serial port, this program can parse received NMEA data and present it through a clear and intuitive interface, facilitating debugging and analysis for developers and technicians.
 
-## 主要功能
+## Key Features
 
-- 全面支持 NMEA-0183 协议，可解析常见的 NMEA 语句（如 GPRMC, GPGGA 等）
-- 实时显示解析后的 GPS 信息，包括时间、日期、经纬度、高度、速度和航向
-- 支持多种波特率的串口连接，适配各种 GPS 设备
-- 可切换显示解析后的信息或原始 NMEA 数据日志
-- 黑底绿字的经典命令行风格日志显示，方便查看和分析原始 NMEA 数据
-- 用户友好的图形界面，包括信息面板和控制面板，便于快速设置和监控
+- Comprehensive support for the NMEA-0183 protocol, capable of parsing common NMEA sentences (such as GPRMC, GPGGA, etc.)
+- Real-time display of parsed GPS information, including time, date, latitude, longitude, altitude, speed, and heading
+- Support for serial connections with various baud rates, compatible with a wide range of GPS devices
+- Option to switch between displaying parsed information or raw NMEA data logs
+- Classic command-line style log display with black background and green text, convenient for viewing and analyzing raw NMEA data
+- User-friendly graphical interface, including information panels and control panels for quick setup and monitoring
 
-## 安装说明
+## Installation Instructions
 
-1. 确保您的系统已安装 Python 3.6 或更高版本。
+1. Ensure that Python 3.6 or higher is installed on your system.
 
-2. 克隆此仓库到本地。
+2. Clone this repository to your local machine.
 
-3. 安装所需依赖：
+3. Install the required dependencies:
    ```
    pip install PySide6 pyserial pytz
    ```
 
-## 使用方法
+## Usage Instructions
 
-1. 运行主程序：
+1. Run the main program:
    ```
    python main.py
    ```
 
-2. 在界面上选择正确的 COM 端口和波特率。确保这些设置与您的 GPS 设备匹配。
+2. Select the correct COM port and baud rate in the interface. Make sure these settings match your GPS device.
 
-3. 点击"启动"按钮开始接收和解析 NMEA-0183 数据。
+3. Click the "Start" button to begin receiving and parsing NMEA-0183 data.
 
-4. 使用"显示日志"复选框切换between解析后的信息显示和原始 NMEA 数据日志。
+4. Use the "Show Log" checkbox to toggle between displaying parsed information and raw NMEA data logs.
 
-5. 分析显示的数据，进行必要的调试和测试。
+5. Analyze the displayed data, perform necessary debugging and testing.
 
-6. 点击"停止"按钮停止接收数据。
+6. Click the "Stop" button to stop receiving data.
 
-注意：本工具专为调试符合 NMEA-0183 协议的 GPS 设备设计。如果您的设备使用其他协议，可能需要进行相应的修改。
+Note: This tool is designed specifically for debugging GPS devices that comply with the NMEA-0183 protocol. If your device uses a different protocol, modifications may be necessary.
 
-## 文件结构
+## File Structure
 
-- `main.py`: 主程序入口
-- `gps_ui.py`: 用户界面实现
-- `gps_communication.py`: GPS 数据通信和 NMEA-0183 协议解析逻辑
+- `main.py`: Main program entry point
+- `gps_ui.py`: User interface implementation
+- `gps_communication.py`: GPS data communication and NMEA-0183 protocol parsing logic
 
-## 依赖项
+## Dependencies
 
 - PySide6
 - pyserial
@@ -58,4 +58,3 @@ GPS NMEA-0183 调试工具是一个专门设计用于调试和分析 GPS 设备�
 
 ---
 
-感谢您使用 GPS NMEA-0183 调试工具！
